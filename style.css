@@ -30,3 +30,12 @@ footer { font-size: 13px; text-align: center; margin-top: 28px; color: #8993a8; 
 .delete-button { color: #ae3442; background: #fff0f2; padding: 8px 11px; flex-shrink: 0; }
 .delete-button:hover { background: #ffe0e5; }
 @media (max-width: 470px) { .form { flex-direction: column; } .form button { width: 100%; } }
+
+.filter-bar { display: flex; flex-wrap: wrap; gap: 7px; margin: 2px 0 20px; }
+.filter-button { cursor: pointer; border: 1px solid #dae1ef; border-radius: 99px; padding: 9px 13px; font: inherit; font-size: 13px; font-weight: 700; color: #53627b; background: #fff; }
+.filter-button.active { border-color: #3e5be5; color: white; background: #3e5be5; }
+.task-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.task-check { display: inline-flex; align-items: center; gap: 9px; cursor: pointer; }
+.task-check input { width: 18px; height: 18px; accent-color: #3e5be5; }
+.task.completed .task-name { text-decoration: line-through; color: #8a93a5; }
+@media (max-width: 470px) { .task { align-items: flex-start; } .task-actions { gap: 7px; } }

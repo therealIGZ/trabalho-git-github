@@ -21,10 +21,15 @@
         <input id="nova-tarefa" type="text" placeholder="O que você precisa fazer?" maxlength="100" required aria-label="Nome da nova tarefa">
         <button type="submit">Adicionar</button>
       </form>
+      <nav class="filter-bar" aria-label="Filtros de tarefas">
+        <button class="filter-button active" data-filter="todas" type="button">Todas</button>
+        <button class="filter-button" data-filter="pendentes" type="button">Pendentes</button>
+        <button class="filter-button" data-filter="concluidas" type="button">Concluídas</button>
+      </nav>
       <ul id="lista-tarefas" class="task-list" aria-live="polite"></ul>
       <div id="estado-vazio" class="empty">
-        <strong>Nenhuma tarefa por enquanto.</strong>
-        Use o campo acima para cadastrar uma atividade.
+        <strong>Nenhuma tarefa nesta visualização.</strong>
+        Adicione uma tarefa ou escolha outro filtro.
       </div>
     </section>
     <footer>TaskFlow · Trabalho prático de versionamento</footer>
