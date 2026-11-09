@@ -17,3 +17,16 @@ h2 { font-size: 21px; margin: 0; }
 .empty { margin-top: 12px; padding: 46px 22px; border-radius: 14px; border: 1px dashed #c9d4ea; background: #f9fbff; text-align: center; color: #667085; }
 .empty strong { display: block; margin-bottom: 7px; color: #394761; font-size: 17px; }
 footer { font-size: 13px; text-align: center; margin-top: 28px; color: #8993a8; }
+
+.form { display: flex; gap: 10px; margin-bottom: 22px; }
+.form input { flex: 1; min-width: 0; border: 1px solid #d8e0ed; border-radius: 11px; padding: 13px 14px; font: inherit; outline: none; }
+.form input:focus { border-color: #637eec; box-shadow: 0 0 0 3px #637eec21; }
+.form button, .delete-button { border: 0; border-radius: 11px; font: inherit; font-weight: 700; cursor: pointer; }
+.form button { background: #3e5be5; color: white; padding: 13px 18px; }
+.form button:hover { background: #314bca; }
+.task-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.task { background: #fafbfe; border: 1px solid #e4e9f2; border-radius: 12px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.task-name { overflow-wrap: anywhere; }
+.delete-button { color: #ae3442; background: #fff0f2; padding: 8px 11px; flex-shrink: 0; }
+.delete-button:hover { background: #ffe0e5; }
+@media (max-width: 470px) { .form { flex-direction: column; } .form button { width: 100%; } }

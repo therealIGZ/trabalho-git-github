@@ -17,9 +17,14 @@
         <h2 id="titulo-tarefas">Minhas tarefas</h2>
         <span id="contador" class="counter">0 tarefas</span>
       </div>
-      <div class="empty">
+      <form id="form-tarefa" class="form">
+        <input id="nova-tarefa" type="text" placeholder="O que você precisa fazer?" maxlength="100" required aria-label="Nome da nova tarefa">
+        <button type="submit">Adicionar</button>
+      </form>
+      <ul id="lista-tarefas" class="task-list" aria-live="polite"></ul>
+      <div id="estado-vazio" class="empty">
         <strong>Nenhuma tarefa por enquanto.</strong>
-        As próximas funcionalidades serão adicionadas por branches.
+        Use o campo acima para cadastrar uma atividade.
       </div>
     </section>
     <footer>TaskFlow · Trabalho prático de versionamento</footer>
