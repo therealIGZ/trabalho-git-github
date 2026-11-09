@@ -1,0 +1,5 @@
+# Quatro arquivos locais que NAO devem subir para o GitHub
+config.local.json
+debug.log
+notas-pessoais.txt
+dados-temporarios.csv
